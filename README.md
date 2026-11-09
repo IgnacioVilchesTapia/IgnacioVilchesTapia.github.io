@@ -1,19 +1,34 @@
-# React + Vite
+# Portafolio personal
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Portafolio web hecho con React (Vite) y Tailwind CSS.
 
-Currently, two official plugins are available:
+Sitio publicado: https://ignaciovilchestapia.github.io
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Cada push a la rama `main` compila y publica el sitio automáticamente con GitHub Actions (`.github/workflows/deploy.yml`).
 
-## React Compiler
+## Requisitos
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+- Node.js 20 o superior
 
-Note: This will impact Vite dev & build performances.
-You can also try [the experimental native React Compiler support in plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md#rust-react-compiler) by using `compiler: true` in the plugin options instead of using the Babel plugin.
+## Instalación
 
-## Expanding the ESLint configuration
+```bash
+npm install
+npm run dev
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+El sitio queda disponible en http://localhost:5173
+
+## Scripts
+
+- `npm run dev`: servidor de desarrollo
+- `npm run build`: genera la versión de producción en `dist/`
+- `npm run preview`: muestra la versión de producción
+- `npm run lint`: revisa el código con oxlint
+
+## Funcionalidades
+
+- Modo claro / oscuro guardado en localStorage
+- Efecto de máquina de escribir en el título principal
+- Resplandor que sigue al mouse
+- Secciones: Sobre mí, Tecnologías, Proyectos y Contacto
